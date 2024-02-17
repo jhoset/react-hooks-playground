@@ -1,9 +1,11 @@
 // import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
 
 import './index.css'
+import { MainApp } from './09-useContext/MainApp'
 
-import { TodoApp } from './08-useReducer/TodoApp';
+// import { TodoApp } from './08-useReducer/TodoApp';
 // import './08-useReducer/intro-reducer';
 // import { Padre } from './07-memo-task/Padre'
 // import { CallbackHook } from './06-memos/CallbackHook'
@@ -19,5 +21,7 @@ import { TodoApp } from './08-useReducer/TodoApp';
 // import { CounterApp } from './01-useState/CounterApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <TodoApp />
+    <BrowserRouter>
+        <MainApp />
+    </BrowserRouter>
 )
