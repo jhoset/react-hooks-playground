@@ -7,7 +7,7 @@ import { Loading } from "./Loading";
 export const MultipleCustomHooks = () => {
     const { counter, increment } = useCounter(1);
     const { data, isLoading } = useFetch(`https://rickandmortyapi.com/api/character/${counter}`);
-    console.log({ data, isLoading })
+    // console.log({ data, isLoading })
     const { name, location: { name: locationName } = {}, image } = !!data && data;
 
     return (
